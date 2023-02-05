@@ -1,18 +1,39 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("HeckroHUB", "Midnight")
+local Window = Library.CreateLib("HeckroHUB", "Ocean")
 
 --Main
 local Main = Window:NewTab("Main")
 local MainSection = Main:NewSection("Main")
 
 
+MainSection:NewButton("Roblox Profile", "Copy Roblox Profile Link", function()
+	setclipboard("https://www.roblox.com/users/4137791381/profile")
+end)
+
+
 MainSection:NewButton("Discord", "Copy Discord Invite Link", function()
     setclipboard("https://discord.gg/44cTkWSVwe")
 end)
 
+
+MainSection:NewButton("Youtube", "Copy Youtube Link", function()
+	setclipboard("https://www.youtube.com/channel/UCB4L5_QxNKa_i3qy4DYg7Mg")
+end)
+
+
+MainSection:NewButton("Twitter", "Copy Twitter Link", function()
+	setclipboard("https://twitter.com/Heckro34")
+end)
+
+
+MainSection:NewKeybind("ToggleUI", "Invs And Vis HeckroHub ", Enum.KeyCode.RightShift, function()
+	Library:ToggleUI()
+end)
+
+
 --Scripts
-local Scripts = Window:NewTab("Main")
-local ScriptsSection = Scripts:NewSection("Main")
+local Scripts = Window:NewTab("Scripts")
+local ScriptsSection = Scripts:NewSection("Scripts")
 
 
 
@@ -23,11 +44,6 @@ end)
 
 ScriptsSection:NewButton("Doors", "Doors Scripts I Note:There AntiCheat", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
-end)
-
-
-ScriptsSection:NewButton("FunkyFriday", "FunkyFriday Script", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))(
 end)
 
 
@@ -56,11 +72,12 @@ ScriptsSection:NewButton("Type Race", "Type Race Script I Note:There No Hub And 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Type-Race/main/script"))()
 end)
 
-local FESection = FE:NewSection("FE")
+local FEScripts = Window:NewTab("FEScripts")
+local FESection = FEScripts:NewSection("FEScripts")
 
 
 FESection:NewButton("FE Fighter R15", "FE Fighter Script (R15 Only)", function()
-    loadstring(game:HttpGet(("https://raw.githubusercontent.com/OmarXploits/Free-Scripts/main/R15-Fighter"))()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/OmarXploits/Free-Scripts/main/R15-Fighter"))()
 end)
 
 
@@ -68,37 +85,32 @@ FESection:NewButton("Fe Snake V2", "FE Snake V2 Script (R15/R6)", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fe-Snake-V2/main/script"))()
 end)
 
-
-local OtherSection = Other:NewSection("Other")
-
-
-OtherSection:NewButton("Walk On Walls", "Walk On Walls Script", function()
-	loadstring(game:HttpsGet("https://raw.githubusercontent.com/Heckro/Walk-On-Walls/main/script"))()
-end)
+local OtherScripts = Window:NewTab("OtherScripts")
+local OtherSection = OtherScripts:NewSection("OtherScripts")
 
 
-OtherSection:NewButton("Domain Hub X"), "Domain Hub X Script"
+OtherSection:NewButton("Domain Hub X", "Domain Hub X Script", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/DomainX/main/source"))()
 end)
 
-OtherSection:NewButton("Fling Mouse"), "Fling Mouse Script I Note:LeftClick To Select Place To Put The Fling Part"
+OtherSection:NewButton("Fling Mouse", "Fling Mouse Script I Note:LeftClick To Select Place To Put The Fling Part", function()
 	loadstring(game:HttpsGet("https://raw.githubusercontent.com/Heckro/Fling-Mouse/main/script"))()
 end)
-OtherSection:NewButton("Infinite Yield"), "Infinite Yield I Prefix:(;)"
+OtherSection:NewButton("Infinite Yield", "Infinite Yield I Prefix:(;)", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
 end)
 
 
-OtherSection:NewButton("Telekinesis"), "Telekinesis Script"
+OtherSection:NewButton("Telekinesis", "Telekinesis Script", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Telekinesis/main/script"))()
 end)
 
 
-OtherSection:NewButton("Fling Gui"), "Fling Gui Script"
+OtherSection:NewButton("Fling Gui", "Fling Gui Script", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fling-Gui/main/script"))()
 end)
 
 
-OtherSection:NewButton("Fling Without Collision"), "Fling Without Collision Script"
+OtherSection:NewButton("Fling Without Collision", "Fling Without Collision Script", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fe-Fling-No-Collision-/main/script"))()
 end)
