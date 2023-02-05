@@ -1,0 +1,104 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Heckro34_HUB", "Midnight")
+
+--Main
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewButton("Discord", "Copy Discord Invite Link", function()
+    setclipboard("https://discord.gg/44cTkWSVwe")
+end)
+
+--Scripts
+local Scripts = Window:NewTab("Main")
+local ScriptsSection = Scripts:NewSection("Main")
+
+
+
+ScriptsSection:NewButton("Bedwars", "Bedwars Script", function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() 
+end)
+
+
+ScriptsSection:NewButton("Doors", "Doors Scripts I Note:There AntiCheat", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+end)
+
+
+ScriptsSection:NewButton("FunkyFriday", "FunkyFriday Script", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/wally-rblx/funky-friday-autoplay/main/main.lua",true))(
+end)
+
+
+ScriptsSection:NewButton("Islands", "Islands Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/uzu01/public/main/loader.lua"))()
+end)
+
+
+ScriptsSection:NewButton("MM2", "Murder Mystery 2 Script", function()
+    getgenv().mainKey = "nil";
+
+ local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+end)
+
+
+ScriptsSection:NewButton("Ragdoll Engine", "Ragdoll Engine Script", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua"))()
+end)
+
+
+ScriptsSection:NewButton("RBW4", "RB World 4 Script", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/tututu1mn13/rbw4hub/main/script.lua"))()
+end)
+
+ScriptsSection:NewButton("Type Race", "Type Race Script I Note:There No Hub And Only Execute When Round Start", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Type-Race/main/script"))()
+end)
+
+local FESection = FE:NewSection("FE")
+
+
+FESection:NewButton("FE Fighter R15", "FE Fighter Script (R15 Only)", function()
+    loadstring(game:HttpGet(("https://raw.githubusercontent.com/OmarXploits/Free-Scripts/main/R15-Fighter"))()
+end)
+
+
+FESection:NewButton("Fe Snake V2", "FE Snake V2 Script (R15/R6)", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fe-Snake-V2/main/script"))()
+end)
+
+
+local OtherSection = Other:NewSection("Other")
+
+
+OtherSection:NewButton("Walk On Walls", "Walk On Walls Script", function()
+	loadstring(game:HttpsGet("https://raw.githubusercontent.com/Heckro/Walk-On-Walls/main/script"))()
+end)
+
+
+OtherSection:NewButton("Domain Hub X"), "Domain Hub X Script"
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/DomainX/main/source"))()
+end)
+
+OtherSection:NewButton("Fling Mouse"), "Fling Mouse Script I Note:LeftClick To Select Place To Put The Fling Part"
+	loadstring(game:HttpsGet("https://raw.githubusercontent.com/Heckro/Fling-Mouse/main/script"))()
+end)
+OtherSection:NewButton("Infinite Yield"), "Infinite Yield I Prefix:(;)"
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+end)
+
+
+OtherSection:NewButton("Telekinesis"), "Telekinesis Script"
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Telekinesis/main/script"))()
+end)
+
+
+OtherSection:NewButton("Fling Gui"), "Fling Gui Script"
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fling-Gui/main/script"))()
+end)
+
+
+OtherSection:NewButton("Fling Without Collision"), "Fling Without Collision Script"
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fe-Fling-No-Collision-/main/script"))()
+end)
