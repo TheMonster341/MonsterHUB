@@ -72,6 +72,41 @@ ScriptsSection:NewButton("Type Race", "Type Race Script I Note:There No Hub And 
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Type-Race/main/script"))()
 end)
 
+
+ScriptsSection:NewButton("StrongMan Simulator", "StrongMan Simulator Script", function()
+	loadstring(game:HttpGet(('https://raw.githubusercontent.com/naypramx/naypramxhub/main/pornhubxvideo'))()
+end)
+
+
+ScriptsSEction:NewButton("Pet Sim X", "Pet Simulator Script", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Schervi/FloppaHub/main/FloppaHubMain.lua"))()
+end)
+
+
+ScriptsSection:NewButton("Ninja Legends 1", "Ninja Legends 1", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoHacks/Parkour/main/Main.lua"))()
+end)
+
+
+ScriptsSection:NewButton("Muscle Legends", "Muscle Legends Script", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/littlegui/main/MuscleLegends"))()
+end)
+
+
+ScriptsSection:NewButton("Mad City", "Mad City Script", function()
+	loadstring(Game:HttpGet("https://raw.githubusercontent.com/Heckro/Mad-City/main/script"))()
+end)
+
+
+ScriptsSection:NewButton("Da Hood", "Da Hood Script", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Games/Da%20Hood/SilentAimAimLock.lua"))()
+end)
+
+
+ScriptsSection:NewButton("KAT", "Knife Abilly Test Script", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringVbyQoVG4Dx0m"))()
+end)
+
 local FEScripts = Window:NewTab("FEScripts")
 local FESection = FEScripts:NewSection("FEScripts")
 
