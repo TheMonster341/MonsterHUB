@@ -47,11 +47,6 @@ ScriptsSection:NewButton("Doors", "Doors Scripts I Note:There AntiCheat", functi
 end)
 
 
-ScriptsSection:NewButton("Islands", "Islands Script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/uzu01/public/main/loader.lua"))()
-end)
-
-
 ScriptsSection:NewButton("MM2", "Murder Mystery 2 Script", function()
     getgenv().mainKey = "nil";
 
