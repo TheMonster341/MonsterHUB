@@ -74,11 +74,11 @@ end)
 
 
 ScriptsSection:NewButton("StrongMan Simulator", "StrongMan Simulator Script", function()
-	loadstring(game:HttpGet(('https://raw.githubusercontent.com/naypramx/naypramxhub/main/pornhubxvideo'))()
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/naypramx/naypramxhub/main/pornhubxvideo'))()
 end)
 
 
-ScriptsSEction:NewButton("Pet Sim X", "Pet Simulator Script", function()
+ScriptsSection:NewButton("Pet Sim X", "Pet Simulator Script", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Schervi/FloppaHub/main/FloppaHubMain.lua"))()
 end)
 
