@@ -102,6 +102,12 @@ ScriptsSection:NewButton("KAT", "Knife Abilly Test Script", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringVbyQoVG4Dx0m"))()
 end)
 
+
+ScriptsSection:NewButton("Blox Fruits", "Blox Fruits Script", function()
+	loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/SpaceHubLoader"))()
+end)
+
+
 local FEScripts = Window:NewTab("FEScripts")
 local FESection = FEScripts:NewSection("FEScripts")
 
@@ -151,4 +157,4 @@ end)
 
 OtherSection:NewButton("Walk On Walls", "Walk On Walls I Note:Z To Toggle", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Walk-On-Walls/main/script"))()
-end)
+end)	
