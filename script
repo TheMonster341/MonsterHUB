@@ -103,11 +103,6 @@ ScriptsSection:NewButton("KAT", "Knife Abilly Test Script", function()
 end)
 
 
-ScriptsSection:NewButton("Blox Fruits", "Blox Fruits Script", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Lucasfin000/SpaceHub/main/SpaceHubLoader"))()
-end)
-
-
 local FEScripts = Window:NewTab("FEScripts")
 local FESection = FEScripts:NewSection("FEScripts")
 
