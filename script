@@ -157,4 +157,4 @@ end)
 
 OtherSection:NewButton("Walk On Walls", "Walk On Walls I Note:Z To Toggle", function()
 	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Walk-On-Walls/main/script"))()
-end)	
+end)
