@@ -1,155 +1,229 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("HeckroHUB", "Ocean")
-
---Main
-local Main = Window:NewTab("Main")
-local MainSection = Main:NewSection("Main")
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 
-MainSection:NewButton("Roblox Profile", "Copy Roblox Profile Link", function()
-	setclipboard("https://www.roblox.com/users/4137791381/profile")
-end)
+local HeckroHub = Rayfield:CreateWindow({
+   Name = "HeckroHub",
+   LoadingTitle = "HeckroHub",
+   LoadingSubtitle = "by ! SubToHeckro#0723",
+   ConfigurationSaving = {
+      Enabled = true,
+      FolderName = HeckroHub, -- Create a custom folder for your hub/game
+      FileName = "HeckroHub"
+   },
+   Discord = {
+      Enabled = true,
+      Invite = "44cTkWSVwe", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
+      RememberJoins = false -- Set this to false to make them join the discord every time they load it up
+   },
+   KeySystem = true, -- Set this to true to use our key system
+   KeySettings = {
+      Title = "Heckro Hub",
+      Subtitle = "Key System",
+      Note = "Join the discord (discord.gg/44cTkWSVwe)",
+      FileName = "HeckroKey",
+      SaveKey = true,
+      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
+      Key = "g65dh8587dg5hd875ghd67fh"
+   }
+})
 
+--MainTab
 
-MainSection:NewButton("Discord", "Copy Discord Invite Link", function()
-    setclipboard("https://discord.gg/44cTkWSVwe")
-end)
+local MainTab = HeckroHub:CreateTab("Main") -- Title
+local LinksSection = MainTab:CreateSection("Links")
 
+local Keybind = MainTab:CreateKeybind({
+   Name = "ToggleUI",
+   CurrentKeybind = "RightShift",
+   HoldToInteract = false,
+   Flag = "ToggleUI", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Keybind)
+   Rayfield:ToggleUI()
+   end,
+})
 
-MainSection:NewButton("Youtube", "Copy Youtube Link", function()
-	setclipboard("https://www.youtube.com/channel/UCB4L5_QxNKa_i3qy4DYg7Mg")
-end)
+local YoutubeButton = MainTab:CreateButton({
+   Name = "Youtube Link",
+   Callback = function()
+   setclipboard("https://www.youtube.com/channel/UCB4L5_QxNKa_i3qy4DYg7Mg")
+   end,
+})
 
+local DiscordButton = MainTab:CreateButton({
+   Name = "Discord Link",
+   Callback = function()
+   setclipboard("https://discord.gg/44cTkWSVwe")
+   end,
+})
 
-MainSection:NewButton("Twitter", "Copy Twitter Link", function()
-	setclipboard("https://twitter.com/Heckro34")
-end)
+local RobloxButton = MainTab:CreateButton({
+   Name = "Roblox Link",
+   Callback = function()
+   setclipboard("https://www.roblox.com/users/4137791381/profile")
+   end,
+})
 
+--ScriptsTab
+local ScriptsTab = HeckroHub:CreateTab("Scripts")
 
-MainSection:NewKeybind("ToggleUI", "Invs And Vis HeckroHub ", Enum.KeyCode.RightShift, function()
-	Library:ToggleUI()
-end)
+local ScriptsSection = ScriptsTab:CreateSection("Scripts")
 
+local Script1 = ScriptsTab:CreateButton({
+   Name = "Bedwars",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua"))()
+   end,
+})
 
---Scripts
-local Scripts = Window:NewTab("Scripts")
-local ScriptsSection = Scripts:NewSection("Scripts")
+local Script2 = ScriptsTab:CreateButton({
+   Name = "Doors",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+   end,
+})
 
+local Script3 = ScriptsTab:CreateButton({
+   Name = "MM2",
+   Callback = function()
+   getgenv().mainKey = "nil";
 
+   local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
+   end,
+})
 
-ScriptsSection:NewButton("Bedwars", "Bedwars Script", function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/NewMainScript.lua", true))() 
-end)
+local Script4 = ScriptsTab:CreateButton({
+   Name = "Ragdoll Engine",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua"))()
+   end,
+})
 
+local Script5 = ScriptsTab:CreateButton({
+   Name = "RBW4",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/tututu1mn13/rbw4hub/main/script.lua"))()
+   end,
+})
 
-ScriptsSection:NewButton("Doors", "Doors Scripts I Note:There AntiCheat", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
-end)
+local Script6 = ScriptsTab:CreateButton({
+   Name = "Type Race",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Type-Race/main/script"))()
+   end,
+})
 
+local Script7 = ScriptsTab:CreateButton({
+   Name = "StrongMan Simulator",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/naypramx/naypramxhub/main/pornhubxvideo"))()
+   end,
+})
 
-ScriptsSection:NewButton("MM2", "Murder Mystery 2 Script", function()
-    getgenv().mainKey = "nil";
+local Script8 = ScriptsTab:CreateButton({
+   Name = "Pet Sim X",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Schervi/FloppaHub/main/FloppaHubMain.lua"))()
+   end,
+})
 
- local a,b,c,d,e=loadstring,request or http_request or (http and http.request) or (syn and syn.request),assert,tostring,"https\58//api.eclipsehub.xyz/auth";c(a and b,"Executor not Supported")a(b({Url=e.."\?\107e\121\61"..d(mainKey),Headers={["User-Agent"]="Eclipse"}}).Body)()
-end)
+local Script9 = ScriptsTab:CreateButton({
+   Name = "Ninja Legends 1",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoHacks/Parkour/main/Main.lua"))()
+   end,
+})
 
+local Script10 = ScriptsTab:CreateButton({
+   Name = "Muscle Legends",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/littlegui/main/MuscleLegends"))()
+   end,
+})
 
-ScriptsSection:NewButton("Ragdoll Engine", "Ragdoll Engine Script", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/martinelcrac/cryptonichub/main/Ragdollengine.lua"))()
-end)
+local Script11 = ScriptsTab:CreateButton({
+   Name = "Mad City",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Mad-City/main/script"))()
+   end,
+})
 
+local Script12 = ScriptsTab:CreateButton({
+   Name = "Da Hood",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Games/Da%20Hood/SilentAimAimLock.lua"))()
+   end,
+})
 
-ScriptsSection:NewButton("RBW4", "RB World 4 Script", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/tututu1mn13/rbw4hub/main/script.lua"))()
-end)
+local Script13 = ScriptsTab:CreateButton({
+   Name = "KAT",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringVbyQoVG4Dx0m"))()
+   end,
+})
 
-ScriptsSection:NewButton("Type Race", "Type Race Script I Note:There No Hub And Only Execute When Round Start", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Type-Race/main/script"))()
-end)
+local FESection = ScriptsTab:CreateSection("FE")
 
+local FEScript1 = ScriptsTab:CreateButton({
+   Name = "FE Fighter (R15 Only)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/OmarXploits/Free-Scripts/main/R15-Fighter"))()
+   end,
+})
 
-ScriptsSection:NewButton("StrongMan Simulator", "StrongMan Simulator Script", function()
-	loadstring(game:HttpGet('https://raw.githubusercontent.com/naypramx/naypramxhub/main/pornhubxvideo'))()
-end)
+local FEScript2 = ScriptsTab:CreateButton({
+   Name = "FE Snake V2",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fe-Snake-V2/main/script"))()
+   end,
+})
 
+local OthersSection = ScriptsTab:CreateSection("Others")
 
-ScriptsSection:NewButton("Pet Sim X", "Pet Simulator Script", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Schervi/FloppaHub/main/FloppaHubMain.lua"))()
-end)
+local OtherScript1 = ScriptsTab:CreateButton({
+   Name = "Domain Hub X",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/DomainX/main/source"))()
+   end,
+})
 
+local OtherScript2 = ScriptsTab:CreateButton({
+   Name = "Fling Mouse (Select Any Place To Place Fling Part)",
+   Callback = function()
+   loadstring(game:HttpsGet("https://raw.githubusercontent.com/Heckro/Fling-Mouse/main/script"))()
+   end,
+})
 
-ScriptsSection:NewButton("Ninja Legends 1", "Ninja Legends 1", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/LegoHacks/Parkour/main/Main.lua"))()
-end)
+local OtherScript3 = ScriptsTab:CreateButton({
+   Name = "Infinite Yield",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+   end,
+})
 
+local OtherScript4 = ScriptsTab:CreateButton({
+   Name = "Telekinesis Tool",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Telekinesis/main/script"))()
+   end,
+})
 
-ScriptsSection:NewButton("Muscle Legends", "Muscle Legends Script", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/1201for/littlegui/main/MuscleLegends"))()
-end)
+local OtherScript5 = ScriptsTab:CreateButton({
+   Name = "Fling Gui",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fling-Gui/main/script"))()
+   end,
+})
 
+local OtherScript6 = ScriptsTab:CreateButton({
+   Name = "Fling Without Collision (R6 Only)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fe-Fling-No-Collision-/main/script"))()
+   end,
+})
 
-ScriptsSection:NewButton("Mad City", "Mad City Script", function()
-	loadstring(Game:HttpGet("https://raw.githubusercontent.com/Heckro/Mad-City/main/script"))()
-end)
-
-
-ScriptsSection:NewButton("Da Hood", "Da Hood Script", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Stefanuk12/ROBLOX/master/Games/Da%20Hood/SilentAimAimLock.lua"))()
-end)
-
-
-ScriptsSection:NewButton("KAT", "Knife Abilly Test Script", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/2dgeneralspam1/scripts-and-stuff/master/scripts/LoadstringVbyQoVG4Dx0m"))()
-end)
-
-
-local FEScripts = Window:NewTab("FEScripts")
-local FESection = FEScripts:NewSection("FEScripts")
-
---FEScripts
-
-FESection:NewButton("FE Fighter R15", "FE Fighter Script (R15 Only)", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/OmarXploits/Free-Scripts/main/R15-Fighter"))()
-end)
-
-
-FESection:NewButton("Fe Snake V2", "FE Snake V2 Script (R15/R6)", function()
-    loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fe-Snake-V2/main/script"))()
-end)
-
---OtherScripts
-
-local OtherScripts = Window:NewTab("OtherScripts")
-local OtherSection = OtherScripts:NewSection("OtherScripts")
-
-
-OtherSection:NewButton("Domain Hub X", "Domain Hub X Script", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/shlexware/DomainX/main/source"))()
-end)
-
-OtherSection:NewButton("Fling Mouse", "Fling Mouse Script I Note:LeftClick To Select Place To Put The Fling Part", function()
-	loadstring(game:HttpsGet("https://raw.githubusercontent.com/Heckro/Fling-Mouse/main/script"))()
-end)
-OtherSection:NewButton("Infinite Yield", "Infinite Yield I Prefix:(;)", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-end)
-
-
-OtherSection:NewButton("Telekinesis", "Telekinesis Script", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Telekinesis/main/script"))()
-end)
-
-
-OtherSection:NewButton("Fling Gui", "Fling Gui Script", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fling-Gui/main/script"))()
-end)
-
-
-OtherSection:NewButton("Fling Without Collision", "Fling Without Collision Script", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fe-Fling-No-Collision-/main/script"))()
-end)
-
-
-OtherSection:NewButton("Walk On Walls", "Walk On Walls I Note:Z To Toggle", function()
-	loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Walk-On-Walls/main/script"))()
-end)
+local OtherScript7 = ScriptsTab:CreateButton({
+   Name = "Walk On Walls (Z To Toggle)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Walk-On-Walls/main/script"))()
+   end,
+})
