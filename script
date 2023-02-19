@@ -189,7 +189,7 @@ local OtherScript1 = ScriptsTab:CreateButton({
 local OtherScript2 = ScriptsTab:CreateButton({
    Name = "Fling Mouse (Select Any Place To Place Fling Part)",
    Callback = function()
-   loadstring(game:HttpsGet("https://raw.githubusercontent.com/Heckro/Fling-Mouse/main/script"))()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fling-Mouse/main/script"))()
    end,
 })
 
