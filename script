@@ -23,7 +23,7 @@ local HeckroHub = Rayfield:CreateWindow({
       FileName = "HeckroKey",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = "g65dh8587dg5hd875ghd67fh"
+      Key = "h2kl34g6j256d2gh5626f236h2j"
    }
 })
 
