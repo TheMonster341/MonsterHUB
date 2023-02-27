@@ -30,6 +30,17 @@ local MonsterHub = Rayfield:CreateWindow({
 --MainTab
 
 local MainTab = MonsterHub:CreateTab("Main") -- Title
+
+local Keybind = MainTab:CreateKeybind({
+   Name = "ToggleUI",
+   CurrentKeybind = "RightShift",
+   HoldToInteract = false,
+   Flag = "ToggleUI", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
+   Callback = function(Keybind)
+   Rayfield:ToggleUI()
+   end,
+})
+
 local LinksSection = MainTab:CreateSection("Links")
 
 local Keybind = MainTab:CreateKeybind({
