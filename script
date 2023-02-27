@@ -1,14 +1,14 @@
 local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
 
 
-local HeckroHub = Rayfield:CreateWindow({
-   Name = "HeckroHub",
-   LoadingTitle = "HeckroHub",
-   LoadingSubtitle = "by ! SubToHeckro#0723",
+local MonsterHub = Rayfield:CreateWindow({
+   Name = "MonsterHub",
+   LoadingTitle = "MonsterHub",
+   LoadingSubtitle = "by ! The Monster#0723",
    ConfigurationSaving = {
       Enabled = true,
-      FolderName = HeckroHub, -- Create a custom folder for your hub/game
-      FileName = "HeckroHub"
+      FolderName = MonsterHub, -- Create a custom folder for your hub/game
+      FileName = "MonsterHub"
    },
    Discord = {
       Enabled = true,
@@ -17,10 +17,10 @@ local HeckroHub = Rayfield:CreateWindow({
    },
    KeySystem = true, -- Set this to true to use our key system
    KeySettings = {
-      Title = "Heckro Hub",
+      Title = "MonsterHub",
       Subtitle = "Key System",
       Note = "Join the discord (discord.gg/44cTkWSVwe)",
-      FileName = "HeckroKey",
+      FileName = "MonsterKey",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
       Key = "h2kl34g6j256d2gh5626f236h2j"
@@ -29,7 +29,7 @@ local HeckroHub = Rayfield:CreateWindow({
 
 --MainTab
 
-local MainTab = HeckroHub:CreateTab("Main") -- Title
+local MainTab = MonsterHub:CreateTab("Main") -- Title
 local LinksSection = MainTab:CreateSection("Links")
 
 local Keybind = MainTab:CreateKeybind({
@@ -64,7 +64,7 @@ local RobloxButton = MainTab:CreateButton({
 })
 
 --ScriptsTab
-local ScriptsTab = HeckroHub:CreateTab("Scripts")
+local ScriptsTab = MonsterHub:CreateTab("Scripts")
 
 local ScriptsSection = ScriptsTab:CreateSection("Scripts")
 
