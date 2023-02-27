@@ -23,7 +23,7 @@ local MonsterHub = Rayfield:CreateWindow({
       FileName = "MonsterKey",
       SaveKey = true,
       GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = "h2kl34g6j256d2gh5626f236h2j"
+      Key = "4h5k35kh43k5g356363gj3456k"
    }
 })
 
