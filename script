@@ -175,16 +175,30 @@ local Script13 = ScriptsTab:CreateButton({
 local FESection = ScriptsTab:CreateSection("FE")
 
 local FEScript1 = ScriptsTab:CreateButton({
-   Name = "FE Fighter (R15 Only)",
+   Name = "Fighter (R15 Only)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/OmarXploits/Free-Scripts/main/R15-Fighter"))()
    end,
 })
 
 local FEScript2 = ScriptsTab:CreateButton({
-   Name = "FE Snake V2",
+   Name = "Snake V2",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fe-Snake-V2/main/script"))()
+   end,
+})
+
+local FEScript3 = ScriptsTab:CreateButton({
+   Name = "Walk On Walls (Z To Toggle)",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Walk-On-Walls/main/script"))()
+   end,
+})
+
+local FEScript4 = ScriptsTab:CreateButton({
+   Name = "Telekinesis Tool",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Telekinesis/main/script"))()
    end,
 })
 
@@ -212,29 +226,15 @@ local OtherScript3 = ScriptsTab:CreateButton({
 })
 
 local OtherScript4 = ScriptsTab:CreateButton({
-   Name = "Telekinesis Tool",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Telekinesis/main/script"))()
-   end,
-})
-
-local OtherScript5 = ScriptsTab:CreateButton({
    Name = "Fling Gui",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fling-Gui/main/script"))()
    end,
 })
 
-local OtherScript6 = ScriptsTab:CreateButton({
+local OtherScript5 = ScriptsTab:CreateButton({
    Name = "Fling Without Collision (R6 Only)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fe-Fling-No-Collision-/main/script"))()
-   end,
-})
-
-local OtherScript7 = ScriptsTab:CreateButton({
-   Name = "Walk On Walls (Z To Toggle)",
-   Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Walk-On-Walls/main/script"))()
    end,
 })
