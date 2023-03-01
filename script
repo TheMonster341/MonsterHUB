@@ -172,23 +172,30 @@ local FEScript1 = ScriptsTab:CreateButton({
 })
 
 local FEScript2 = ScriptsTab:CreateButton({
-   Name = "Snake V2",
+   Name = "Snake V2 (R15/R6)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fe-Snake-V2/main/script"))()
    end,
 })
 
 local FEScript3 = ScriptsTab:CreateButton({
-   Name = "Walk On Walls (Z To Toggle)",
+   Name = "Walk On Walls (R6/R15,Z To Toggle)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Walk-On-Walls/main/script"))()
    end,
 })
 
 local FEScript4 = ScriptsTab:CreateButton({
-   Name = "Telekinesis Tool",
+   Name = "Telekinesis Tool (R15/R6)",
    Callback = function()
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Telekinesis/main/script"))()
+   end,
+})
+
+local FEScript5 = ScriptsTab:CreateButton({
+   Name = "Tarantula (R6 Only,Check Hats)",
+   Callback = function()
+   loadstring(game:HttpGet(('https://raw.githubusercontent.com/0Ben1/fe/main/Sipder'),true))()
    end,
 })
 
@@ -228,3 +235,25 @@ local OtherScript5 = ScriptsTab:CreateButton({
    loadstring(game:HttpGet("https://raw.githubusercontent.com/Heckro/Fe-Fling-No-Collision-/main/script"))()
    end,
 })
+
+local HatsTab = Window:CreateTab("Hats")
+local TarantulaSection = HatsTab:CreateSection("Tarantula")
+local TarantulaHats1Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat1", Content = ""})
+
+local TarantulaHats2Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat2", Content = "https://www.roblox.com/catalog/48474313/Red-Roblox-Cap"})
+
+local TarantulaHats3Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat3", Content = "https://www.roblox.com/catalog/62724852/Chestnut-Bun"})
+
+local TarantulaHats4Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat4", Content = "https://www.roblox.com/catalog/451220849/Lavender-Updo"})
+
+local TarantulaHats5Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat5", Content = "https://www.roblox.com/catalog/48474294/ROBLOX-Girl-Hair"})
+
+local TarantulaHats6Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat6", Content = "https://www.roblox.com/catalog/376527115/Jade-Necklace-with-Shell-Pendant"})
+
+local TarantulaHats7Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat7", Content = "https://www.roblox.com/catalog/62234425/Brown-Hair"})
+
+local TarantulaHats8Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat8", Content = "https://www.roblox.com/catalog/63690008/Pal-Hair"})
+
+local TarantulaHats9Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat9", Content = "https://www.roblox.com/catalog/3409612660/International-Fedora-USA"})
+
+local TarantulaHats10Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat10", Content = "https://www.roblox.com/catalog/4047554959/International-Fedora-Brazil"})
