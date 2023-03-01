@@ -31,16 +31,6 @@ local MonsterHub = Rayfield:CreateWindow({
 
 local MainTab = MonsterHub:CreateTab("Main") -- Title
 
-local Keybind = MainTab:CreateKeybind({
-   Name = "ToggleUI",
-   CurrentKeybind = "RightShift",
-   HoldToInteract = false,
-   Flag = "ToggleUI", -- A flag is the identifier for the configuration file, make sure every element has a different flag if you're using configuration saving to ensure no overlaps
-   Callback = function(Keybind)
-   Rayfield:ToggleUI()
-   end,
-})
-
 local LinksSection = MainTab:CreateSection("Links")
 
 local YoutubeButton = MainTab:CreateButton({
@@ -236,24 +226,22 @@ local OtherScript5 = ScriptsTab:CreateButton({
    end,
 })
 
-local HatsTab = Window:CreateTab("Hats")
+local HatsTab = MonsterHub:CreateTab("Hats")
 local TarantulaSection = HatsTab:CreateSection("Tarantula")
-local TarantulaHats1Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat1", Content = ""})
+local TarantulaHats1Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat1", Content = "https://www.roblox.com/catalog/48474313/Red-Roblox-Cap"})
 
-local TarantulaHats2Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat2", Content = "https://www.roblox.com/catalog/48474313/Red-Roblox-Cap"})
+local TarantulaHats2Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat2", Content = "https://www.roblox.com/catalog/62724852/Chestnut-Bun"})
 
-local TarantulaHats3Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat3", Content = "https://www.roblox.com/catalog/62724852/Chestnut-Bun"})
+local TarantulaHats3Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat3", Content = "https://www.roblox.com/catalog/451220849/Lavender-Updo"})
 
-local TarantulaHats4Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat4", Content = "https://www.roblox.com/catalog/451220849/Lavender-Updo"})
+local TarantulaHats4Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat4", Content = "https://www.roblox.com/catalog/48474294/ROBLOX-Girl-Hair"})
 
-local TarantulaHats5Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat5", Content = "https://www.roblox.com/catalog/48474294/ROBLOX-Girl-Hair"})
+local TarantulaHats5Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat5", Content = "https://www.roblox.com/catalog/376527115/Jade-Necklace-with-Shell-Pendant"})
 
-local TarantulaHats6Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat6", Content = "https://www.roblox.com/catalog/376527115/Jade-Necklace-with-Shell-Pendant"})
+local TarantulaHats6Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat6", Content = "https://www.roblox.com/catalog/62234425/Brown-Hair"})
 
-local TarantulaHats7Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat7", Content = "https://www.roblox.com/catalog/62234425/Brown-Hair"})
+local TarantulaHats7Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat7", Content = "https://www.roblox.com/catalog/63690008/Pal-Hair"})
 
-local TarantulaHats8Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat8", Content = "https://www.roblox.com/catalog/63690008/Pal-Hair"})
+local TarantulaHats8Paragraph = HatsTab:CreateParagraph({Title = "Tarantula8", Content = "https://www.roblox.com/catalog/3409612660/International-Fedora-USA"})
 
-local TarantulaHats9Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat9", Content = "https://www.roblox.com/catalog/3409612660/International-Fedora-USA"})
-
-local TarantulaHats10Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat10", Content = "https://www.roblox.com/catalog/4047554959/International-Fedora-Brazil"})
+local TarantulaHats9Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat9", Content = "https://www.roblox.com/catalog/4047554959/International-Fedora-Brazil"})
