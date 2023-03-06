@@ -69,7 +69,7 @@ local Script1 = ScriptsTab:CreateButton({
 local Script2 = ScriptsTab:CreateButton({
    Name = "Doors",
    Callback = function()
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/RegularVynixu/Vynixius/main/Doors/Script.lua"))()
+   loadstring(game:HttpGet('https://raw.githubusercontent.com/zoophiliaphobic/POOPDOORS/main/script.lua'))()
    end,
 })
 
