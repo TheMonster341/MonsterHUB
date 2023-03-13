@@ -226,6 +226,13 @@ local OtherScript5 = ScriptsTab:CreateButton({
    end,
 })
 
+local OtherScript6 = ScriptsTab:CreateButton({
+   Name = "Doors Entity Morpher",
+   Callback = function()
+   loadstring(game:HttpGet("https://raw.githubusercontent.com/ChronoAccelerator/Public-Scripts/main/Morphing/MorphScript.lua"))();
+   end,
+})
+
 local HatsTab = MonsterHub:CreateTab("Hats")
 local TarantulaSection = HatsTab:CreateSection("Tarantula")
 local TarantulaHats1Paragraph = HatsTab:CreateParagraph({Title = "TarantulaHat1", Content = "https://www.roblox.com/catalog/48474313/Red-Roblox-Cap"})
